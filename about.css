@@ -1,0 +1,1333 @@
+/* =====================================================
+   ABOUT PAGE
+   ===================================================== */
+
+.about-hero {
+    min-height: 75vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 100px 8%;
+
+    background: var(--background);
+
+    border-bottom: 1px solid var(--light-gray);
+}
+
+.about-hero-content {
+    max-width: 800px;
+}
+
+.about-hero h1 {
+    margin: 20px 0;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(60px, 8vw, 120px);
+
+    line-height: 0.95;
+    letter-spacing: -4px;
+}
+
+.about-hero h1 em {
+    color: var(--accent);
+    font-weight: 500;
+}
+
+.about-hero p {
+    max-width: 520px;
+
+    color: var(--gray);
+
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+.hero-number {
+    font-family: "Playfair Display", serif;
+
+    font-size: 180px;
+
+    color: var(--light-gray);
+
+    line-height: 1;
+}
+
+
+/* =====================================================
+   INTRO
+   ===================================================== */
+
+.about-intro {
+    background: var(--white);
+    margin: 20px 0;
+}
+
+.intro-content {
+    display: grid;
+
+    grid-template-columns: 1.4fr 0.8fr;
+
+    gap: 100px;
+
+    margin-top: 70px;
+}
+
+.intro-text {
+    max-width: 700px;
+}
+
+.intro-text p {
+    margin-bottom: 25px;
+
+    color: var(--gray);
+
+    line-height: 1.8;
+}
+
+.intro-text .large-text {
+    color: var(--black);
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 28px;
+    line-height: 1.4;
+}
+
+.class-facts {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    border-top: 1px solid var(--black);
+}
+
+.fact {
+    padding: 25px 10px;
+
+    border-bottom: 1px solid var(--light-gray);
+}
+
+.fact:nth-child(odd) {
+    border-right: 1px solid var(--light-gray);
+}
+
+.fact span {
+    display: block;
+
+    margin-bottom: 10px;
+
+    color: var(--gray);
+
+    font-size: 11px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+.fact strong {
+    font-family: "Playfair Display", serif;
+
+    font-size: 38px;
+}
+
+
+/* =====================================================
+   ACADEMIC STRUCTURE
+   ===================================================== */
+
+.academic-section {
+    background: var(--background);
+}
+
+.section-header.center {
+    text-align: center;
+}
+
+.section-header.center p {
+    max-width: 550px;
+
+    margin: 15px auto 0;
+
+    color: var(--gray);
+
+    line-height: 1.7;
+}
+
+.academic-tree {
+    max-width: 750px;
+
+    margin: 70px auto 0;
+}
+
+.academic-level {
+    display: flex;
+    align-items: center;
+
+    gap: 30px;
+
+    padding: 25px 30px;
+
+    background: var(--white);
+
+    border: 1px solid var(--light-gray);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.academic-level:hover {
+    transform: translateX(8px);
+
+    box-shadow: 10px 10px 0 var(--accent);
+}
+
+.academic-level.current {
+    background: var(--black);
+
+    color: var(--white);
+}
+
+.academic-level.current small {
+    color: var(--accent);
+}
+
+.level-number {
+    font-family: "Playfair Display", serif;
+
+    font-size: 28px;
+
+    color: var(--accent);
+}
+
+.academic-level small {
+    display: block;
+
+    margin-bottom: 5px;
+
+    color: var(--gray);
+
+    font-size: 10px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+.academic-level h3 {
+    font-family: "Playfair Display", serif;
+
+    font-size: 24px;
+}
+
+.tree-line {
+    width: 1px;
+    height: 35px;
+
+    margin-left: 45px;
+
+    background: var(--accent);
+}
+
+
+/* =====================================================
+   INSTITUTIONS
+   ===================================================== */
+
+.institution-section {
+    background: var(--white);
+}
+
+.institution-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+.institution-card {
+    position: relative;
+
+    min-height: 450px;
+
+    padding: 45px 35px;
+
+    border: 1px solid var(--light-gray);
+
+    display: flex;
+    flex-direction: column;
+}
+
+.institution-card.dark {
+    background: var(--black);
+
+    color: var(--white);
+
+    border-color: var(--black);
+}
+
+.card-number {
+    position: absolute;
+
+    top: 30px;
+    right: 30px;
+
+    color: var(--accent);
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 28px;
+}
+
+.institution-card h2 {
+    margin: 35px 0 25px;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 38px;
+
+    line-height: 1.1;
+}
+
+.institution-card p {
+    color: var(--gray);
+
+    line-height: 1.7;
+}
+
+.institution-card.dark p {
+    color: #aaa;
+}
+
+.text-link {
+    margin-top: auto;
+
+    color: var(--black);
+
+    font-size: 12px;
+    font-weight: 700;
+
+    text-decoration: none;
+
+    letter-spacing: 1px;
+}
+
+.dark .text-link {
+    color: var(--accent);
+}
+
+
+/* =====================================================
+   ADVISOR
+   ===================================================== */
+
+.advisor-section {
+    background: var(--background);
+
+    display: grid;
+
+    grid-template-columns: 0.7fr 1.3fr;
+
+    gap: 100px;
+
+    align-items: center;
+}
+
+.advisor-heading h2 {
+    margin-top: 20px;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 55px;
+
+    line-height: 1.05;
+}
+
+.advisor-card {
+    display: grid;
+
+    grid-template-columns: 260px 1fr;
+
+    background: var(--white);
+
+    box-shadow: 15px 15px 0 var(--accent);
+
+    cursor: pointer;
+
+    transition: transform 0.3s ease;
+}
+
+.advisor-card:hover {
+    transform: translateY(-8px);
+}
+
+.advisor-photo {
+    height: 350px;
+}
+
+.advisor-photo img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    filter: grayscale(100%);
+
+    transition: filter 0.3s ease;
+}
+
+.advisor-card:hover img {
+    filter: grayscale(0%);
+}
+
+.advisor-info {
+    padding: 45px 35px;
+}
+
+.profile-role {
+    color: var(--accent);
+
+    font-size: 10px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+.advisor-info h3 {
+    margin: 15px 0;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 32px;
+}
+
+.advisor-info p {
+    color: var(--gray);
+
+    line-height: 1.7;
+}
+
+.outline-button {
+    margin-top: 30px;
+
+    padding: 12px 20px;
+
+    border: 1px solid var(--black);
+
+    background: transparent;
+
+    cursor: pointer;
+
+    font-family: inherit;
+    font-weight: 600;
+}
+
+
+/* =====================================================
+   ORGANIZATION
+   ===================================================== */
+
+.organization-section {
+    background: var(--white);
+}
+
+.organization-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 18px;
+
+    margin-top: 70px;
+}
+
+.org-card {
+    border: 1px solid var(--light-gray);
+
+    cursor: pointer;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.org-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 8px 8px 0 var(--accent);
+}
+
+.org-image {
+    position: relative;
+
+    height: 300px;
+
+    overflow: hidden;
+}
+
+.org-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    filter: grayscale(100%);
+
+    transition:
+        filter 0.4s ease,
+        transform 0.4s ease;
+}
+
+.org-card:hover img {
+    filter: grayscale(0%);
+
+    transform: scale(1.04);
+}
+
+.org-image span {
+    position: absolute;
+
+    top: 15px;
+    left: 15px;
+
+    padding: 5px 9px;
+
+    background: var(--black);
+
+    color: var(--white);
+
+    font-size: 11px;
+}
+
+.org-info {
+    padding: 25px;
+}
+
+.org-info > span {
+    color: var(--accent);
+
+    font-size: 10px;
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+}
+
+.org-info h3 {
+    margin: 8px 0 18px;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 23px;
+}
+
+.org-info button {
+    padding: 0;
+
+    border: none;
+
+    background: none;
+
+    color: var(--black);
+
+    font-size: 11px;
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+
+/* =====================================================
+   IDENTITY
+   ===================================================== */
+
+.identity-section {
+    padding: 130px 8%;
+
+    background: var(--black);
+
+    color: var(--white);
+}
+
+.identity-content {
+    max-width: 900px;
+
+    margin: auto;
+
+    text-align: center;
+}
+
+.identity-content h2 {
+    margin: 20px 0;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(50px, 7vw, 90px);
+
+    line-height: 1;
+}
+
+.identity-content p {
+    color: #aaa;
+
+    line-height: 1.7;
+}
+
+.values {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    margin-top: 70px;
+
+    border-top: 1px solid #444;
+}
+
+.values div {
+    padding: 25px 10px;
+
+    border-right: 1px solid #444;
+}
+
+.values div:last-child {
+    border-right: none;
+}
+
+.values strong {
+    display: block;
+
+    margin-bottom: 10px;
+
+    color: var(--accent);
+
+    font-family: "Playfair Display", serif;
+}
+
+.values span {
+    font-size: 13px;
+}
+
+
+/* =====================================================
+   JOURNEY
+   ===================================================== */
+
+.journey-section {
+    background: var(--background);
+}
+
+.journey-timeline {
+    max-width: 900px;
+
+    margin: 70px auto 0;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(5, 1fr);
+
+    border-top: 1px solid var(--black);
+}
+
+.journey-item {
+    padding: 25px 15px;
+
+    border: none;
+    border-right: 1px solid var(--light-gray);
+
+    background: transparent;
+
+    text-align: left;
+
+    cursor: pointer;
+}
+
+.journey-item:last-child {
+    border-right: none;
+}
+
+.journey-item .year {
+    display: block;
+
+    margin-bottom: 12px;
+
+    color: var(--gray);
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 24px;
+}
+
+.journey-item strong {
+    font-size: 12px;
+}
+
+.journey-item.active {
+    background: var(--black);
+
+    color: var(--white);
+}
+
+.journey-item.active .year {
+    color: var(--accent);
+}
+
+.journey-detail {
+    max-width: 900px;
+
+    margin: 40px auto 0;
+
+    padding: 45px;
+
+    background: var(--white);
+
+    border-left: 4px solid var(--accent);
+}
+
+.journey-detail > span {
+    color: var(--accent);
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 24px;
+}
+
+.journey-detail h3 {
+    margin: 8px 0 15px;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 32px;
+}
+
+.journey-detail p {
+    max-width: 700px;
+
+    color: var(--gray);
+
+    line-height: 1.8;
+}
+
+
+/* =====================================================
+   USEFUL LINKS
+   ===================================================== */
+
+.about-links {
+    background: var(--white);
+}
+
+.links-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 15px;
+
+    margin-top: 60px;
+}
+
+.link-card {
+    min-height: 180px;
+
+    padding: 25px;
+
+    display: flex;
+    flex-direction: column;
+
+    border: 1px solid var(--light-gray);
+
+    color: var(--black);
+
+    text-decoration: none;
+
+    transition:
+        background 0.3s ease,
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.link-card:hover {
+    background: var(--black);
+
+    color: var(--white);
+
+    transform: translateY(-6px);
+}
+
+.link-card span {
+    color: var(--accent);
+
+    font-family: "Playfair Display", serif;
+}
+
+.link-card strong {
+    margin-top: auto;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 20px;
+}
+
+.link-card small {
+    margin-top: 8px;
+
+    color: var(--gray);
+}
+
+.link-card:hover small {
+    color: #aaa;
+}
+
+
+/* =====================================================
+   PROFILE MODAL
+   ===================================================== */
+
+.profile-modal {
+    position: fixed;
+
+    inset: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+
+    background: rgba(0, 0, 0, 0.7);
+
+    opacity: 0;
+    visibility: hidden;
+
+    z-index: 9999;
+
+    transition:
+        opacity 0.3s ease,
+        visibility 0.3s ease;
+}
+
+.profile-modal.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.profile-modal-box {
+    position: relative;
+
+    display: grid;
+
+    grid-template-columns: 300px 1fr;
+
+    width: min(700px, 100%);
+
+    background: var(--background);
+
+    transform: translateY(30px);
+
+    transition: transform 0.3s ease;
+}
+
+.profile-modal.active .profile-modal-box {
+    transform: translateY(0);
+}
+
+.modal-image {
+    min-height: 400px;
+}
+
+.modal-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.modal-info {
+    padding: 55px 40px;
+}
+
+.modal-info > span {
+    color: var(--accent);
+
+    font-size: 10px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+.modal-info h2 {
+    margin: 15px 0;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 38px;
+}
+
+.modal-info p {
+    color: var(--gray);
+
+    line-height: 1.8;
+}
+
+.modal-close {
+    position: absolute;
+
+    top: 15px;
+    right: 15px;
+
+    width: 38px;
+    height: 38px;
+
+    border: none;
+
+    background: var(--black);
+
+    color: var(--white);
+
+    font-size: 23px;
+
+    cursor: pointer;
+
+    z-index: 2;
+}
+
+.modal-close:hover {
+    background: var(--accent);
+
+    color: var(--black);
+}
+
+
+/* =====================================================
+   RESPONSIVE
+   ===================================================== */
+
+@media (max-width: 1000px) {
+
+    .institution-grid,
+    .organization-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .advisor-section {
+        grid-template-columns: 1fr;
+    }
+
+    .links-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 750px) {
+
+    .about-hero {
+        min-height: auto;
+
+        padding: 100px 6%;
+    }
+
+    .hero-number {
+        display: none;
+    }
+
+    .about-hero h1 {
+        letter-spacing: -2px;
+    }
+
+    .intro-content {
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+    }
+
+    .institution-grid,
+    .organization-grid,
+    .links-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .advisor-card {
+        grid-template-columns: 1fr;
+    }
+
+    .advisor-photo {
+        height: 300px;
+    }
+
+    .values {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .values div:nth-child(2) {
+        border-right: none;
+    }
+
+    .journey-timeline {
+        grid-template-columns: 1fr;
+
+        border-top: none;
+    }
+
+    .journey-item {
+        border-right: none;
+        border-bottom: 1px solid var(--light-gray);
+    }
+
+    .profile-modal-box {
+        grid-template-columns: 1fr;
+    }
+
+    .modal-image {
+        height: 230px;
+        min-height: 0;
+    }
+
+    .modal-info {
+        padding: 30px;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .section-padding {
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+
+    .academic-level {
+        padding: 20px;
+    }
+
+    .academic-level h3 {
+        font-size: 19px;
+    }
+
+    .institution-card {
+        min-height: 380px;
+    }
+
+    .values {
+        grid-template-columns: 1fr;
+    }
+
+    .values div {
+        border-right: none;
+    }
+
+}
+
+/* =====================================================
+   SPACING REFINEMENT
+   ===================================================== */
+
+/* General section spacing */
+.section-padding {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+
+/* =====================================================
+   SECTION HEADERS
+   ===================================================== */
+
+.section-header {
+    margin-bottom: 65px;
+    margin: 20px 0;
+}
+
+.section-header h2 {
+    margin-top: 18px;
+}
+
+.section-header p {
+    margin-top: 18px;
+}
+
+
+/* Centered header */
+.section-header.center {
+    margin-bottom: 70px;
+}
+
+
+/* =====================================================
+   CLASS OVERVIEW
+   ===================================================== */
+
+.about-intro .section-header {
+    margin-bottom: 0;
+}
+
+.intro-content {
+    margin-top: 75px;
+}
+
+.intro-text p {
+    margin-bottom: 28px;
+
+}
+
+.intro-text p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* =====================================================
+   ACADEMIC STRUCTURE
+   ===================================================== */
+
+.academic-tree {
+    margin-top: 80px;
+}
+
+.academic-level {
+    padding: 30px 35px;
+}
+
+.academic-level h3 {
+    margin-top: 5px;
+}
+
+
+/* =====================================================
+   INSTITUTION CARDS
+   ===================================================== */
+
+.institution-grid {
+    gap: 25px;
+}
+
+.institution-card {
+    padding: 50px 40px;
+}
+
+.institution-card h2 {
+    margin-top: 45px;
+    margin-bottom: 28px;
+}
+
+.institution-card p {
+    margin-bottom: 25px;
+}
+
+
+/* =====================================================
+   DOSEN PA
+   ===================================================== */
+
+.advisor-section {
+    padding-top: 140px;
+    padding-bottom: 140px;
+}
+
+.advisor-heading {
+    padding-right: 30px;
+}
+
+.advisor-heading h2 {
+    margin-top: 25px;
+}
+
+.advisor-card {
+    margin-top: 10px;
+}
+
+.advisor-info {
+    padding: 50px 45px;
+}
+
+.advisor-info h3 {
+    margin-top: 18px;
+    margin-bottom: 20px;
+}
+
+.advisor-info p {
+    margin-bottom: 10px;
+}
+
+
+/* =====================================================
+   BPH / ORGANIZATION
+   ===================================================== */
+
+.organization-section .section-header {
+    margin-bottom: 75px;
+}
+
+.organization-grid {
+    gap: 25px;
+}
+
+.org-info {
+    padding: 30px;
+}
+
+.org-info h3 {
+    margin-top: 10px;
+    margin-bottom: 22px;
+}
+
+
+/* =====================================================
+   CLASS IDENTITY
+   ===================================================== */
+
+.identity-section {
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.identity-content > p {
+    margin-top: 25px;
+}
+
+.values {
+    margin-top: 80px;
+}
+
+.values div {
+    padding: 30px 15px;
+}
+
+
+/* =====================================================
+   JOURNEY
+   ===================================================== */
+
+.journey-section .section-header {
+    margin-bottom: 80px;
+}
+
+.journey-timeline {
+    margin-top: 0;
+}
+
+.journey-item {
+    min-height: 130px;
+    padding: 30px 20px;
+}
+
+.journey-detail {
+    margin-top: 45px;
+    padding: 50px;
+}
+
+.journey-detail h3 {
+    margin-top: 12px;
+    margin-bottom: 18px;
+}
+
+
+/* =====================================================
+   USEFUL LINKS
+   ===================================================== */
+
+.about-links .section-header {
+    margin-bottom: 70px;
+}
+
+.links-grid {
+    gap: 20px;
+}
+
+.link-card {
+    min-height: 200px;
+    padding: 30px;
+}
+
+
+/* =====================================================
+   MOBILE SPACING
+   ===================================================== */
+
+@media (max-width: 750px) {
+
+    .section-padding {
+        padding-top: 85px;
+        padding-bottom: 85px;
+    }
+
+    .section-header {
+        margin-bottom: 45px;
+    }
+
+    .section-header.center {
+        margin-bottom: 50px;
+    }
+
+    .intro-content {
+        margin-top: 50px;
+    }
+
+    .academic-tree {
+        margin-top: 55px;
+    }
+
+    .institution-card {
+        padding: 40px 30px;
+    }
+
+    .advisor-section {
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
+
+    .organization-section .section-header {
+        margin-bottom: 50px;
+    }
+
+    .organization-grid {
+        gap: 20px;
+    }
+
+    .identity-section {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .values {
+        margin-top: 55px;
+    }
+
+    .journey-section .section-header {
+        margin-bottom: 50px;
+    }
+
+    .journey-detail {
+        margin-top: 30px;
+        padding: 35px 25px;
+    }
+
+    .about-links .section-header {
+        margin-bottom: 50px;
+    }
+
+}
+
+.section-header {
+    margin: 40px;
+}
+
+.advisor-heading {
+    margin: 20px;
+}
+
+.intro-text  {
+    margin: 40px;
+}
+
+.organization-section {
+    margin: 20px;
+}

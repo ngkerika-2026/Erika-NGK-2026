@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Memories — Class 2026</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="memories.css">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<header class="navbar">
+        <div class="nav-container">
+
+            <a href="#" class="logo">
+                <span class="logo-mark">26</span>
+                <span>エリカ | Erika</span>
+            </a>
+
+             <!-- MOBILE MENU BUTTON -->
+            <button
+            class="menu-toggle"
+            id="menuToggle"
+            aria-label="Open navigation"
+            aria-expanded="false"
+            type="button">
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </button>
+
+            <nav class="nav-menu" id="navMenu">
+                <a href="index.html" class="active">Home</a>
+                <a href="about.html">About</a>
+                <a href="member.html">Members</a>
+                <a href="academic.html">Academic</a>
+                <a href="#">Memories</a>
+            </nav>
+
+            <a href="#contact" class="nav-button">
+                Member Area
+            </a>
+
+        </div>
+    </header>
+
+    <div class="nav-overlay" id="navOverlay"></div>
+
+
+<main>
+
+<!-- ================= HERO ================= -->
+
+<section class="memories-hero">
+
+    <div class="memories-hero-inner">
+
+        <div class="memories-hero-copy">
+
+            <span class="section-label">
+                MEMORIES
+            </span>
+
+            <h1>
+                Four Years.<br>
+                <em>Countless</em><br>
+                Memories.
+            </h1>
+
+            <p>
+                A visual archive of the moments,
+                people, places, and stories that
+                shaped our journey together.
+            </p>
+
+        </div>
+
+        <div class="hero-number">
+
+            <span>04</span>
+
+            <small>
+                MEMORIES
+            </small>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FEATURED MEMORY ================= -->
+
+<section class="featured-memory section-padding">
+
+    <div class="memories-container">
+
+        <div class="memory-section-header">
+
+            <span class="section-label">
+                FEATURED MEMORY
+            </span>
+
+            <h2>
+                The First<br>
+                <em>Chapter.</em>
+            </h2>
+
+        </div>
+
+
+        <div class="featured-card">
+
+            <div class="featured-image">
+
+                <img
+                    src="assets/memories/featured.jpg"
+                    alt="Featured class memory"
+                >
+
+                <div class="featured-overlay">
+                    <span>2026</span>
+                </div>
+
+            </div>
+
+
+            <div class="featured-content">
+
+                <span class="memory-date">
+                    2026 — THE BEGINNING
+                </span>
+
+                <h3>
+                    Where It All Started.
+                </h3>
+
+                <p>
+                    Every journey begins with a first step.
+                    This is where our four-year story begins.
+                </p>
+
+                <button
+                    class="view-featured"
+                    id="viewFeatured">
+                    View Memory →
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= GALLERY ================= -->
+
+<section class="gallery-section section-padding">
+
+    <div class="memories-container">
+
+        <div class="memory-section-header">
+
+            <span class="section-label">
+                PHOTO ARCHIVE
+            </span>
+
+            <h2>
+                Moments We<br>
+                <em>Keep.</em>
+            </h2>
+
+            <p>
+                A collection of moments captured throughout
+                our years together.
+            </p>
+
+        </div>
+
+
+        <!-- YEAR FILTER -->
+
+        <div class="year-filter">
+
+            <button
+                class="year-btn active"
+                data-year="all">
+                All
+            </button>
+
+            <button
+                class="year-btn"
+                data-year="2026">
+                2026
+            </button>
+
+            <button
+                class="year-btn"
+                data-year="2027">
+                2027
+            </button>
+
+            <button
+                class="year-btn"
+                data-year="2028">
+                2028
+            </button>
+
+            <button
+                class="year-btn"
+                data-year="2029">
+                2029
+            </button>
+
+            <button
+                class="year-btn"
+                data-year="2030">
+                2030
+            </button>
+
+        </div>
+
+
+        <!-- PHOTO GRID -->
+
+        <div
+            class="memory-grid"
+            id="memoryGrid">
+            <!-- Generated by JS -->
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= JOURNEY ================= -->
+
+<section class="memory-journey section-padding">
+
+    <div class="memories-container">
+
+        <div class="memory-section-header center">
+
+            <span class="section-label">
+                OUR JOURNEY
+            </span>
+
+            <h2>
+                From First Step<br>
+                <em>To Final Chapter.</em>
+            </h2>
+
+        </div>
+
+
+        <div class="journey-line">
+
+            <div class="journey-year">
+
+                <span>2026</span>
+
+                <div class="journey-dot"></div>
+
+                <h3>
+                    The Beginning
+                </h3>
+
+                <p>
+                    First meetings, first classes,
+                    and the beginning of our story.
+                </p>
+
+            </div>
+
+
+            <div class="journey-year">
+
+                <span>2027</span>
+
+                <div class="journey-dot"></div>
+
+                <h3>
+                    Growing Together
+                </h3>
+
+                <p>
+                    New experiences and memories
+                    built along the way.
+                </p>
+
+            </div>
+
+
+            <div class="journey-year">
+
+                <span>2028</span>
+
+                <div class="journey-dot"></div>
+
+                <h3>
+                    Creating
+                </h3>
+
+                <p>
+                    Projects, events, and moments
+                    worth remembering.
+                </p>
+
+            </div>
+
+
+            <div class="journey-year">
+
+                <span>2029</span>
+
+                <div class="journey-dot"></div>
+
+                <h3>
+                    Almost There
+                </h3>
+
+                <p>
+                    The final chapters of our
+                    journey begin to take shape.
+                </p>
+
+            </div>
+
+
+            <div class="journey-year">
+
+                <span>2030</span>
+
+                <div class="journey-dot"></div>
+
+                <h3>
+                    The Final Chapter
+                </h3>
+
+                <p>
+                    Graduation marks an ending,
+                    but the memories remain.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CLOSING ================= -->
+
+<section class="memories-closing">
+
+    <div class="closing-inner">
+
+        <span class="closing-mark">✦</span>
+
+        <h2>
+            Some moments<br>
+            deserve to stay.
+        </h2>
+
+        <p>
+            Four years may pass,
+            but the memories we create together
+            will always be part of our story.
+        </p>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- ================= LIGHTBOX ================= -->
+
+<div
+    class="memory-lightbox"
+    id="memoryLightbox">
+
+    <button
+        class="lightbox-close"
+        id="lightboxClose">
+        ×
+    </button>
+
+
+    <button
+        class="lightbox-prev"
+        id="lightboxPrev">
+        ←
+    </button>
+
+
+    <div class="lightbox-content">
+
+        <img
+            id="lightboxImage"
+            src=""
+            alt=""
+        >
+
+        <div class="lightbox-info">
+
+            <span
+                id="lightboxYear">
+            </span>
+
+            <h3
+                id="lightboxTitle">
+            </h3>
+
+            <p
+                id="lightboxDescription">
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <button
+        class="lightbox-next"
+        id="lightboxNext">
+        →
+    </button>
+
+</div>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer id="contact">
+
+        <div class="footer-container">
+
+            <div class="footer-brand">
+
+                <div class="logo">
+                    <span class="logo-mark">26</span>
+                    <span>エリカ | Erika</span>
+                </div>
+
+                <p>
+                    Started together.<br>
+                    Growing together.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <div>
+                    <h4>Explore</h4>
+                    <a href="index.html">Memories</a>
+                    <a href="about.html">About</a>
+                    <a href="member.html">Members</a>
+                    <a href="academic.html">Academic</a>  
+                </div>
+
+                <div>
+                    <h4>Connect</h4>
+                    <a href="#">Instagram</a>
+                    <a href="#">WhatsApp</a>
+                    <a href="#">Google Drive</a>
+                    <a href="#">Discord</a>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <span>
+                © Sultan Rizky Akbar 2026
+            </span>
+
+            <span>
+                Made for the Galaxy Memories
+            </span>
+
+        </div>
+
+    </footer>
+
+
+<script src="script.js"></script>
+<script src="memories.js"></script>
+
+</body>
+</html>

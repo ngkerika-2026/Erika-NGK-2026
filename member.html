@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Members — エリカ | Erika</title>
+
+   <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="member.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+        <div class="nav-container">
+
+            <a href="#" class="logo">
+                <span class="logo-mark">26</span>
+                <span>エリカ | Erika</span>
+            </a>
+
+             <!-- MOBILE MENU BUTTON -->
+            <button
+            class="menu-toggle"
+            id="menuToggle"
+            aria-label="Open navigation"
+            aria-expanded="false"
+            type="button">
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </button>
+
+            <nav class="nav-menu" id="navMenu">
+                <a href="index.html" class="active">Home</a>
+                <a href="about.html">About</a>
+                <a href="#">Members</a>
+                <a href="academic.html">Academic</a>
+                <a href="memories.html">Memories</a>
+            </nav>
+
+            <a href="#contact" class="nav-button">
+                Member Area
+            </a>
+
+        </div>
+    </header>
+
+    <div class="nav-overlay" id="navOverlay"></div>
+
+
+    <main>
+
+        <!-- ================= PAGE HERO ================= -->
+
+        <section class="members-hero">
+
+            <div class="section-container">
+
+                <p class="section-label">
+                    OUR PEOPLE
+                </p>
+
+                <h1>
+                    Meet the<br>
+                    <span>Class.</span>
+                </h1>
+
+                <div class="members-intro">
+
+                    <p>
+                        Orang-orang yang menjadi bagian dari
+                        perjalanan kami. Setiap orang membawa
+                        cerita, minat, dan pengalaman yang berbeda.
+                    </p>
+
+                    <div class="member-count">
+                        <strong class="stat-number counter" data-target="24">0</strong>
+                        <span>Members<br>in our class</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= MEMBER DIRECTORY ================= -->
+
+        <section class="members-directory">
+
+    <div class="directory-header">
+
+        <div>
+            <span class="section-label">OUR PEOPLE</span>
+
+            <h2>Member Directory</h2>
+
+            <p id="memberCount">
+                0 Members
+            </p>
+        </div>
+
+        <div class="member-controls">
+
+            <input
+                type="text"
+                id="memberSearch"
+                placeholder="Search member..."
+            >
+
+            <div class="filters">
+
+                <button
+                    class="filter-btn active"
+                    data-filter="All">
+                    All
+                </button>
+
+                <button
+                    class="filter-btn"
+                    data-filter="Ketua Kelas">
+                    Ketua Kelas
+                </button>
+
+                <button
+                    class="filter-btn"
+                    data-filter="Member">
+                    Member
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+                <!-- ================= MEMBER GRID ================= -->
+
+                <div class="member-grid">
+
+
+                    <!-- MEMBER 01 -->
+
+                    <a href="#" class="member-card">
+
+                        <div class="member-photo">
+                            <img
+                                src="assets/members/member-01.jpg"
+                                alt="Foto Sultan Rizky Akbar"
+                            >
+
+                            <span class="member-number">
+                                01
+                            </span>
+                        </div>
+
+                        <div class="member-info">
+
+                            <div>
+                                <span class="member-role">
+                                    MEMBER
+                                </span>
+
+                                <h3>
+                                    Sultan Rizky Akbar
+                                </h3>
+                            </div>
+
+                            <span class="member-arrow">
+                                ↗
+                            </span>
+
+                        </div>
+
+                    </a>
+
+
+                    <!-- MEMBER 02 -->
+
+                    <a href="#" class="member-card">
+
+                        <div class="member-photo">
+
+                            <img
+                                src="assets/members/member-02.jpg"
+                                alt="Foto Member 02"
+                            >
+
+                            <span class="member-number">
+                                02
+                            </span>
+
+                        </div>
+
+                        <div class="member-info">
+
+                            <div>
+                                <span class="member-role">
+                                    MEMBER
+                                </span>
+
+                                <h3>
+                                    Nama Mahasiswa
+                                </h3>
+                            </div>
+
+                            <span class="member-arrow">
+                                ↗
+                            </span>
+
+                        </div>
+
+                    </a>
+
+
+                    <!-- MEMBER 03 -->
+
+                    <a href="#" class="member-card">
+
+                        <div class="member-photo">
+
+                            <img
+                                src="assets/members/member-03.jpg"
+                                alt="Foto Member 03"
+                            >
+
+                            <span class="member-number">
+                                03
+                            </span>
+
+                        </div>
+
+                        <div class="member-info">
+
+                            <div>
+                                <span class="member-role">
+                                    MEMBER
+                                </span>
+
+                                <h3>
+                                    Nama Mahasiswa
+                                </h3>
+                            </div>
+
+                            <span class="member-arrow">
+                                ↗
+                            </span>
+
+                        </div>
+
+                    </a>
+
+
+                    <!-- MEMBER 04 -->
+
+                    <a href="#" class="member-card">
+
+                        <div class="member-photo">
+
+                            <img
+                                src="assets/members/member-04.jpg"
+                                alt="Foto Member 04"
+                            >
+
+                            <span class="member-number">
+                                04
+                            </span>
+
+                        </div>
+
+                        <div class="member-info">
+
+                            <div>
+                                <span class="member-role">
+                                    MEMBER
+                                </span>
+
+                                <h3>
+                                    Nama Mahasiswa
+                                </h3>
+                            </div>
+
+                            <span class="member-arrow">
+                                ↗
+                            </span>
+
+                        </div>
+
+                    </a>
+
+
+                    <!-- MEMBER 05 -->
+
+                    <a href="#" class="member-card">
+
+                        <div class="member-photo">
+
+                            <img
+                                src="assets/members/member-05.jpg"
+                                alt="Foto Member 05"
+                            >
+
+                            <span class="member-number">
+                                05
+                            </span>
+
+                        </div>
+
+                        <div class="member-info">
+
+                            <div>
+                                <span class="member-role">
+                                    MEMBER
+                                </span>
+
+                                <h3>
+                                    Nama Mahasiswa
+                                </h3>
+                            </div>
+
+                            <span class="member-arrow">
+                                ↗
+                            </span>
+
+                        </div>
+
+                    </a>
+
+
+                    <!-- MEMBER 06 -->
+
+                    <a href="#" class="member-card">
+
+                        <div class="member-photo">
+
+                            <img
+                                src="assets/members/member-06.jpg"
+                                alt="Foto Member 06"
+                            >
+
+                            <span class="member-number">
+                                06
+                            </span>
+
+                        </div>
+
+                        <div class="member-info">
+
+                            <div>
+                                <span class="member-role">
+                                    MEMBER
+                                </span>
+
+                                <h3>
+                                    Nama Mahasiswa
+                                </h3>
+                            </div>
+
+                            <span class="member-arrow">
+                                ↗
+                            </span>
+
+                        </div>
+
+                    </a>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= QUOTE ================= -->
+
+        <section class="members-quote">
+
+            <div class="section-container">
+
+                <p>
+                    "Different people,<br>
+                    <span>one journey.</span>"
+                </p>
+
+                <small>
+                    — CLASS 2026
+                </small>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer id="contact">
+
+        <div class="footer-container">
+
+            <div class="footer-brand">
+
+                <div class="logo">
+                    <span class="logo-mark">26</span>
+                    <span>エリカ | Erika</span>
+                </div>
+
+                <p>
+                    Started together.<br>
+                    Growing together.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <div>
+                    <h4>Explore</h4>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="academic.html">Academic</a>
+                    <a href="memories.html">Memories</a>
+                </div>
+
+                <div>
+                    <h4>Connect</h4>
+                    <a href="#">Instagram</a>
+                    <a href="#">WhatsApp</a>
+                    <a href="#">Google Drive</a>
+                    <a href="#">Discord</a>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <span>
+                © Sultan Rizky Akbar 2026
+            </span>
+
+            <span>
+                Made for the Galaxy Memories
+            </span>
+
+        </div>
+
+    </footer>
+
+    <div class="modal" id="memberModal">
+
+    <div class="member-modal">
+
+        <button
+            class="modal-close"
+            id="closeMember">
+            ×
+        </button>
+
+        <div class="profile-image-wrapper">
+            <img
+                class="profile-image"
+                src=""
+                alt=""
+            >
+        </div>
+
+        <div class="profile-content">
+
+            <span
+                class="profile-role">
+            </span>
+
+            <h2
+                class="profile-name">
+            </h2>
+
+            <p
+                class="profile-bio">
+            </p>
+
+            <div class="profile-links">
+
+                <a
+                    class="profile-instagram"
+                    href="#"
+                    target="_blank">
+                    Instagram
+                </a>
+
+                <a
+                    class="profile-github"
+                    href="#"
+                    target="_blank">
+                    GitHub
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

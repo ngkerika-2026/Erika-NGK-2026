@@ -1,0 +1,766 @@
+/* ========================================
+   ACADEMIC PAGE
+======================================== */
+
+:root {
+    --academic-black: #171717;
+    --academic-dark: #222222;
+    --academic-gray: #777;
+    --academic-light: #e7e5df;
+    --academic-bg: #f7f6f2;
+    --academic-white: #ffffff;
+    --academic-accent: #c7a56a;
+}
+
+
+/* ========================================
+   GENERAL
+======================================== */
+
+.academic-page {
+    background: var(--academic-bg);
+}
+
+.container {
+    width: min(1240px, calc(100% - 40px));
+    margin: 0 auto;
+}
+
+.section-padding {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+
+/* ========================================
+   HERO
+======================================== */
+
+.academic-hero {
+    background: var(--academic-bg);
+    padding: 120px 6vw 110px;
+}
+
+.academic-hero-inner {
+    width: min(1240px, 100%);
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    gap: 60px;
+}
+
+.academic-hero .section-label {
+    display: block;
+    margin-bottom: 25px;
+}
+
+.academic-hero h1 {
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(58px, 8vw, 110px);
+    line-height: .92;
+
+    margin: 0;
+    letter-spacing: -3px;
+}
+
+.academic-hero h1 em {
+    color: var(--academic-accent);
+    font-style: normal;
+}
+
+.academic-hero p {
+    max-width: 560px;
+
+    margin-top: 35px;
+    margin-bottom: 0;
+
+    color: var(--academic-gray);
+
+    line-height: 1.8;
+    font-size: 16px;
+}
+
+.hero-number {
+    width: 170px;
+    height: 170px;
+
+    flex-shrink: 0;
+
+    background: var(--academic-black);
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 12px 12px 0 var(--academic-accent);
+}
+
+.hero-number span {
+    font-family: "Playfair Display", serif;
+    font-size: 65px;
+    line-height: 1;
+}
+
+.hero-number small {
+    margin-top: 10px;
+
+    color: var(--academic-accent);
+
+    letter-spacing: 2px;
+    font-size: 10px;
+}
+
+
+/* ========================================
+   SECTION HEADER
+======================================== */
+
+.section-header {
+    margin-bottom: 65px;
+}
+
+.section-label {
+    font-size: 11px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    color: var(--academic-accent);
+}
+
+.section-header h2 {
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(42px, 5vw, 68px);
+    line-height: 1.05;
+
+    margin: 18px 0 22px;
+
+    letter-spacing: -1.5px;
+}
+
+.section-header h2 em {
+    color: var(--academic-accent);
+    font-style: normal;
+}
+
+.section-header p {
+    max-width: 650px;
+
+    margin: 0;
+
+    color: var(--academic-gray);
+
+    line-height: 1.8;
+}
+
+
+/* ========================================
+   REPOSITORY
+======================================== */
+
+.repository-section {
+    background: white;
+}
+
+.repository-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 25px;
+
+    margin-bottom: 45px;
+}
+
+.repository-search {
+    width: 100%;
+    max-width: 430px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    border-bottom: 1px solid #bbb;
+
+    padding: 12px 4px;
+}
+
+.repository-search span {
+    font-size: 23px;
+    color: var(--academic-gray);
+}
+
+.repository-search input {
+    width: 100%;
+
+    border: none;
+    outline: none;
+
+    background: transparent;
+
+    font-family: inherit;
+    font-size: 14px;
+}
+
+.repository-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.material-filter {
+    border: 1px solid #d5d2ca;
+
+    background: transparent;
+
+    padding: 10px 18px;
+
+    font-family: inherit;
+    font-size: 12px;
+
+    cursor: pointer;
+
+    transition: .25s;
+}
+
+.material-filter:hover,
+.material-filter.active {
+    background: var(--academic-black);
+    color: white;
+
+    border-color: var(--academic-black);
+}
+
+
+/* ========================================
+   MATERIAL GRID
+======================================== */
+
+.material-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 25px;
+}
+
+.material-card {
+    border: 1px solid #dedbd3;
+
+    background: var(--academic-bg);
+
+    padding: 30px;
+
+    cursor: pointer;
+
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease,
+        border-color .25s ease;
+}
+
+.material-card:hover {
+    transform: translateY(-5px);
+
+    border-color: var(--academic-accent);
+
+    box-shadow:
+        8px 8px 0 rgba(199, 165, 106, .25);
+}
+
+.material-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 35px;
+}
+
+.material-type {
+    font-size: 10px;
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+
+    color: var(--academic-accent);
+}
+
+.material-year {
+    font-size: 11px;
+    color: var(--academic-gray);
+}
+
+.material-card h3 {
+    font-family: "Playfair Display", serif;
+
+    font-size: 25px;
+
+    margin: 0 0 12px;
+
+    line-height: 1.2;
+}
+
+.material-card p {
+    color: var(--academic-gray);
+
+    font-size: 13px;
+
+    line-height: 1.7;
+
+    margin: 0 0 25px;
+}
+
+.material-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-top: 18px;
+
+    border-top: 1px solid #ddd9d0;
+}
+
+.material-course {
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.material-arrow {
+    font-size: 18px;
+}
+
+
+/* ========================================
+   ACHIEVEMENTS
+======================================== */
+
+.achievement-section {
+    background: var(--academic-bg);
+}
+
+.achievement-stats {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    border-top: 1px solid #d7d4cd;
+    border-bottom: 1px solid #d7d4cd;
+
+    margin-bottom: 55px;
+}
+
+.achievement-stats div {
+    text-align: center;
+
+    padding: 30px 20px;
+
+    border-right: 1px solid #d7d4cd;
+}
+
+.achievement-stats div:last-child {
+    border-right: none;
+}
+
+.achievement-stats strong {
+    display: block;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 45px;
+
+    line-height: 1;
+
+    margin-bottom: 8px;
+}
+
+.achievement-stats span {
+    font-size: 10px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1.5px;
+
+    color: var(--academic-gray);
+}
+
+
+/* ========================================
+   ACHIEVEMENT GRID
+======================================== */
+
+.achievement-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 25px;
+}
+
+.achievement-card {
+    background: white;
+
+    border: 1px solid #e0ddd6;
+
+    overflow: hidden;
+
+    cursor: pointer;
+
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease;
+}
+
+.achievement-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        8px 8px 0 rgba(199, 165, 106, .3);
+}
+
+.achievement-image {
+    width: 100%;
+    height: 210px;
+
+    object-fit: cover;
+
+    display: block;
+
+    filter: grayscale(20%);
+
+    transition: .3s;
+}
+
+.achievement-card:hover .achievement-image {
+    filter: grayscale(0);
+}
+
+.achievement-info {
+    padding: 25px;
+}
+
+.achievement-info .achievement-type {
+    display: block;
+
+    font-size: 9px;
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+
+    color: var(--academic-accent);
+
+    margin-bottom: 12px;
+}
+
+.achievement-info h3 {
+    font-family: "Playfair Display", serif;
+
+    font-size: 23px;
+
+    line-height: 1.25;
+
+    margin: 0 0 12px;
+}
+
+.achievement-info p {
+    font-size: 12px;
+
+    color: var(--academic-gray);
+
+    margin: 0 0 18px;
+}
+
+.achievement-info .achievement-year {
+    font-size: 10px;
+
+    letter-spacing: 1px;
+
+    color: var(--academic-gray);
+}
+
+
+/* ========================================
+   QUOTE
+======================================== */
+
+.academic-quote {
+    background: var(--academic-black);
+
+    color: white;
+
+    padding: 130px 20px;
+
+    text-align: center;
+}
+
+.quote-inner {
+    max-width: 850px;
+
+    margin: auto;
+}
+
+.quote-mark {
+    display: block;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 80px;
+
+    line-height: .5;
+
+    color: var(--academic-accent);
+
+    margin-bottom: 35px;
+}
+
+.quote-inner h2 {
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(35px, 5vw, 60px);
+
+    line-height: 1.1;
+
+    margin: 0;
+}
+
+.quote-inner p {
+    color: #aaa;
+
+    line-height: 1.8;
+
+    margin: 30px auto 0;
+
+    max-width: 550px;
+}
+
+
+/* ========================================
+   MODAL
+======================================== */
+
+.academic-modal {
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 1000;
+
+    display: none;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+
+    background: rgba(0, 0, 0, .7);
+}
+
+.academic-modal.show {
+    display: flex;
+}
+
+.achievement-modal-box {
+    position: relative;
+
+    width: min(850px, 100%);
+
+    max-height: 90vh;
+
+    overflow-y: auto;
+
+    background: white;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+}
+
+.academic-modal-close {
+    position: absolute;
+
+    top: 15px;
+    right: 15px;
+
+    z-index: 2;
+
+    width: 40px;
+    height: 40px;
+
+    border: none;
+
+    background: var(--academic-black);
+
+    color: white;
+
+    font-size: 25px;
+
+    cursor: pointer;
+}
+
+.modal-achievement-image {
+    min-height: 400px;
+}
+
+.modal-achievement-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.modal-achievement-content {
+    padding: 55px 45px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.modal-achievement-content h2 {
+    font-family: "Playfair Display", serif;
+
+    font-size: 38px;
+
+    line-height: 1.15;
+
+    margin: 12px 0 18px;
+}
+
+.achievement-member {
+    font-weight: 600;
+
+    margin-bottom: 20px;
+}
+
+.achievement-description {
+    color: var(--academic-gray);
+
+    line-height: 1.8;
+
+    margin-bottom: 25px;
+}
+
+.achievement-year {
+    font-size: 11px;
+
+    letter-spacing: 1.5px;
+
+    color: var(--academic-accent);
+}
+
+
+/* ========================================
+   RESPONSIVE
+======================================== */
+
+@media (max-width: 950px) {
+
+    .academic-hero {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .material-grid,
+    .achievement-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+    .repository-controls {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .repository-search {
+        max-width: 100%;
+    }
+}
+
+
+@media (max-width: 700px) {
+
+    .container {
+        width: min(100% - 40px, 600px);
+    }
+
+    .section-padding {
+        padding-top: 85px;
+        padding-bottom: 85px;
+    }
+
+    .academic-hero {
+        padding: 80px 20px 70px;
+    }
+
+    .academic-hero-inner {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .academic-hero h1 {
+        font-size: 62px;
+    }
+
+    .hero-number {
+        width: 120px;
+        height: 120px;
+    }
+
+    .hero-number span {
+        font-size: 45px;
+    }
+
+    .section-header {
+        margin-bottom: 45px;
+    }
+
+    .material-grid,
+    .achievement-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .achievement-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .achievement-stats div {
+        border-right: none;
+        border-bottom: 1px solid #d7d4cd;
+    }
+
+    .achievement-stats div:last-child {
+        border-bottom: none;
+    }
+
+    .achievement-modal-box {
+        grid-template-columns: 1fr;
+    }
+
+    .modal-achievement-image {
+        height: 250px;
+        min-height: 0;
+    }
+
+    .modal-achievement-content {
+        padding: 35px 25px;
+    }
+
+    .modal-achievement-content h2 {
+        font-size: 30px;
+    }
+
+    .academic-quote {
+        padding: 90px 20px;
+    }
+}

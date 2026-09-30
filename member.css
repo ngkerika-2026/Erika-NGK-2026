@@ -1,0 +1,776 @@
+.members-hero {
+    padding: 120px 0 90px;
+
+    border-bottom: 1px solid var(--light-gray);
+}
+
+.members-hero h1 {
+    font-size: clamp(70px, 9vw, 120px);
+}
+
+.members-hero h1 span {
+    color: var(--accent);
+}
+
+.members-intro {
+    margin-top: 50px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+
+    max-width: 900px;
+}
+
+.members-intro > p {
+    max-width: 450px;
+
+    color: var(--gray);
+    font-size: 15px;
+}
+
+.member-count {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.member-count strong {
+    font-family: "Playfair Display", serif;
+
+    font-size: 60px;
+    line-height: 1;
+
+    color: var(--accent);
+}
+
+.member-count span {
+    font-size: 10px;
+
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+
+    color: var(--gray);
+}
+
+
+/* =========================
+   MEMBERS SECTION
+========================= */
+
+.members-section {
+    padding: 110px 0;
+}
+
+.members-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+
+    margin-bottom: 40px;
+}
+
+.members-toolbar h2 {
+    font-size: 50px;
+}
+
+
+/* =========================
+   SEARCH
+========================= */
+
+.member-search {
+    position: relative;
+
+    width: 260px;
+}
+
+.member-search input {
+    width: 100%;
+
+    padding: 14px 40px 14px 15px;
+
+    border: none;
+    border-bottom: 1px solid #bbb;
+
+    background: transparent;
+
+    outline: none;
+
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+}
+
+.member-search input:focus {
+    border-color: var(--black);
+}
+
+.member-search span {
+    position: absolute;
+
+    right: 10px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    font-size: 20px;
+}
+
+
+/* =========================
+   FILTER
+========================= */
+
+.member-filter {
+    display: flex;
+    gap: 10px;
+
+    margin-bottom: 45px;
+
+    border-bottom: 1px solid var(--light-gray);
+
+    padding-bottom: 15px;
+}
+
+.filter {
+    border: none;
+    background: transparent;
+
+    padding: 8px 15px;
+
+    font-family: "Inter", sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    color: var(--gray);
+}
+
+.filter.active,
+.filter:hover {
+    background: var(--black);
+    color: white;
+}
+
+
+/* =========================
+   MEMBER GRID
+========================= */
+
+.member-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 30px;
+}
+
+
+/* =========================
+   MEMBER CARD
+========================= */
+
+.member-card {
+    background: white;
+
+    border: 1px solid var(--light-gray);
+
+    overflow: hidden;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.member-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        12px 12px 0 var(--accent);
+}
+
+
+/* =========================
+   MEMBER PHOTO
+========================= */
+
+.member-photo {
+    position: relative;
+
+    width: 100%;
+    aspect-ratio: 4 / 4.7;
+
+    background: #ddd;
+
+    overflow: hidden;
+}
+
+.member-photo img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    filter: grayscale(100%);
+
+    transition:
+        transform 0.5s ease,
+        filter 0.5s ease;
+}
+
+.member-card:hover .member-photo img {
+    transform: scale(1.05);
+
+    filter: grayscale(0%);
+}
+
+
+/* =========================
+   NUMBER
+========================= */
+
+.member-number {
+    position: absolute;
+
+    top: 15px;
+    right: 15px;
+
+    width: 40px;
+    height: 40px;
+
+    display: grid;
+    place-items: center;
+
+    background: var(--black);
+    color: white;
+
+    font-size: 10px;
+    font-weight: 700;
+}
+
+
+/* =========================
+   MEMBER INFO
+========================= */
+
+.member-info {
+    min-height: 100px;
+
+    padding: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.member-role {
+    display: block;
+
+    margin-bottom: 7px;
+
+    font-size: 9px;
+    font-weight: 800;
+
+    letter-spacing: 1.5px;
+
+    color: var(--accent);
+}
+
+.member-info h3 {
+    font-size: 17px;
+    line-height: 1.2;
+}
+
+.member-arrow {
+    font-size: 20px;
+
+    transition: transform 0.3s ease;
+}
+
+.member-card:hover .member-arrow {
+    transform: translate(4px, -4px);
+}
+
+
+/* =========================
+   QUOTE
+========================= */
+
+.members-quote {
+    padding: 130px 0;
+
+    background: var(--black);
+    color: white;
+}
+
+.members-quote p {
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(50px, 7vw, 90px);
+
+    line-height: 1.05;
+}
+
+.members-quote p span {
+    color: var(--accent);
+}
+
+.members-quote small {
+    display: block;
+
+    margin-top: 30px;
+
+    font-size: 10px;
+    font-weight: 700;
+
+    letter-spacing: 3px;
+
+    color: #777;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    .members-hero {
+        padding: 90px 0 70px;
+    }
+
+    .members-intro {
+        align-items: start;
+
+        flex-direction: column;
+
+        gap: 40px;
+    }
+
+    .members-toolbar {
+        align-items: start;
+
+        flex-direction: column;
+
+        gap: 30px;
+    }
+
+    .member-search {
+        width: 100%;
+    }
+
+    .member-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 550px) {
+
+    .members-hero h1 {
+        font-size: 65px;
+    }
+
+    .members-section {
+        padding: 80px 0;
+    }
+
+    .member-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .members-toolbar h2 {
+        font-size: 42px;
+    }
+
+    .members-quote {
+        padding: 90px 0;
+    }
+
+    .members-quote p {
+        font-size: 50px;
+    }
+}
+
+/* =====================================================
+   MEMBER SEARCH & FILTER
+   ===================================================== */
+
+.directory-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+
+    gap: 40px;
+
+    margin-bottom: 50px;
+}
+
+.member-controls {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    min-width: 300px;
+}
+
+#memberSearch {
+    width: 100%;
+
+    padding: 14px 18px;
+
+    border: 1px solid var(--light-gray);
+
+    background: var(--white);
+
+    font-family: inherit;
+    font-size: 14px;
+
+    outline: none;
+
+    transition: border 0.3s ease;
+}
+
+#memberSearch:focus {
+    border-color: var(--accent);
+}
+
+.filters {
+    display: flex;
+    gap: 8px;
+}
+
+.filter-btn {
+    padding: 9px 15px;
+
+    border: 1px solid var(--light-gray);
+
+    background: transparent;
+
+    font-family: inherit;
+    font-size: 12px;
+
+    cursor: pointer;
+
+    transition:
+        background 0.3s ease,
+        color 0.3s ease,
+        border 0.3s ease;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background: var(--black);
+    border-color: var(--black);
+
+    color: var(--white);
+}
+
+
+/* Member cards generated by JS */
+
+.member-card {
+    cursor: pointer;
+}
+
+.member-card .member-arrow {
+    transition: transform 0.3s ease;
+}
+
+.member-card:hover .member-arrow {
+    transform: translateX(6px);
+}
+
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+    .directory-header {
+        display: block;
+    }
+
+    .member-controls {
+        margin-top: 30px;
+        min-width: 0;
+    }
+
+    .filters {
+        flex-wrap: wrap;
+    }
+
+}
+
+/* ==============================
+   MEMBERS PAGE — SPACING FIX
+   Letakkan di paling bawah members.css
+================================ */
+
+/* Konsistenkan lebar konten dan padding halaman */
+.members-page,
+.members-main {
+    width: 100%;
+    min-width: 0;
+}
+
+.members-hero,
+.member-directory,
+.members-quote {
+    padding-left: clamp(20px, 6vw, 90px);
+    padding-right: clamp(20px, 6vw, 90px);
+}
+
+/* Jarak atas-bawah tiap section */
+.members-hero {
+    padding-top: clamp(80px, 10vw, 140px);
+    padding-bottom: clamp(65px, 8vw, 110px);
+}
+
+.member-directory {
+    padding-top: clamp(65px, 8vw, 110px);
+    padding-bottom: clamp(80px, 9vw, 125px);
+}
+
+.members-quote {
+    padding-top: clamp(65px, 8vw, 105px);
+    padding-bottom: clamp(65px, 8vw, 105px);
+}
+
+/* Cegah konten terlalu melebar */
+.members-hero-inner,
+.directory-inner,
+.members-quote-inner {
+    width: 100%;
+    max-width: 1240px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Hero */
+.members-hero .hero-label {
+    margin-bottom: 22px;
+}
+
+.members-hero h1 {
+    margin: 0 0 24px;
+    line-height: 1.08;
+}
+
+.members-hero p {
+    max-width: 620px;
+    margin: 0;
+    line-height: 1.8;
+}
+
+.members-hero .member-total,
+.members-hero .hero-meta {
+    margin-top: 35px;
+}
+
+/* Header direktori */
+.directory-header {
+    margin-bottom: 42px;
+}
+
+.directory-header h2 {
+    margin: 12px 0 16px;
+    line-height: 1.15;
+}
+
+.directory-header p {
+    max-width: 650px;
+    margin: 0;
+    line-height: 1.75;
+}
+
+/* Search dan filter */
+.member-controls {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 16px;
+    margin: 0 0 38px;
+}
+
+.member-search,
+#memberSearch {
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+.member-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* Grid dan kartu */
+#memberGrid,
+.member-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: clamp(18px, 2.5vw, 30px);
+    width: 100%;
+}
+
+.member-card {
+    min-width: 0;
+    margin: 20px;
+    overflow: hidden;
+}
+
+.member-card img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 4.5;
+    object-fit: cover;
+}
+
+.member-card-content {
+    padding: 22px 24px 25px;
+}
+
+.member-card h3 {
+    margin: 8px 0 12px;
+    line-height: 1.3;
+}
+
+.member-card p {
+    margin: 0 0 16px;
+    line-height: 1.6;
+}
+
+/* Quote / penutup */
+.members-quote blockquote,
+.members-quote p {
+    max-width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.5;
+    text-align: center;
+}
+
+/* Modal profil */
+#memberModal .member-modal {
+    box-sizing: border-box;
+    width: min(900px, calc(100% - 32px));
+    max-height: calc(100vh - 40px);
+    margin: 20px auto;
+    overflow-y: auto;
+}
+
+#memberModal .profile-content {
+    padding: clamp(24px, 4vw, 48px);
+}
+
+#memberModal .profile-name {
+    margin: 12px 0 16px;
+    line-height: 1.2;
+}
+
+#memberModal .profile-bio {
+    margin: 0 0 24px;
+    line-height: 1.7;
+}
+
+/* Footer: samakan padding dengan section lainnya */
+.members-page footer,
+body:has(.members-hero) footer {
+    padding-left: clamp(20px, 6vw, 90px);
+    padding-right: clamp(20px, 6vw, 90px);
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+    #memberGrid,
+    .member-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .directory-header {
+        margin-bottom: 32px;
+    }
+
+    .member-controls {
+        margin-bottom: 30px;
+    }
+}
+
+/* Ponsel */
+@media (max-width: 600px) {
+    .members-hero,
+    .member-directory,
+    .members-quote {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .members-hero {
+        padding-top: 75px;
+        padding-bottom: 60px;
+    }
+
+    .member-directory {
+        padding-top: 60px;
+        padding-bottom: 75px;
+    }
+
+    .members-quote {
+        padding-top: 55px;
+        padding-bottom: 55px;
+    }
+
+    .members-hero h1 {
+        margin-bottom: 18px;
+    }
+
+    .members-hero .member-total,
+    .members-hero .hero-meta {
+        margin-top: 24px;
+    }
+
+    .directory-header {
+        margin-bottom: 28px;
+    }
+
+    .member-controls {
+        align-items: stretch;
+        flex-direction: column;
+        gap: 14px;
+        margin-bottom: 28px;
+    }
+
+    #memberSearch {
+        width: 100%;
+    }
+
+    .member-filters {
+        gap: 8px;
+    }
+
+    #memberGrid,
+    .member-grid {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 22px;
+    }
+
+    .member-card-content {
+        padding: 20px;
+    }
+
+    #memberModal .member-modal {
+        width: calc(100% - 24px);
+        max-height: calc(100vh - 24px);
+        margin: 12px auto;
+    }
+}
+
+.directory-header {
+    margin: 40px;
+}
