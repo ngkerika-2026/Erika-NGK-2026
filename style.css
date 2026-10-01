@@ -370,6 +370,7 @@ h2 span,
     .nav-menu.open {
         transform: translateX(0);
         visibility: visible;
+        display: flex;
     }
 
     .nav-menu a {
