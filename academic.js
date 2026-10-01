@@ -61,7 +61,7 @@ const materials = [
         year: "2026",
         description:
             "Template dan format dokumen untuk kebutuhan akademik.",
-        link: "#"
+        link: "academic/template Makalah.docx"
     },
 
     {
